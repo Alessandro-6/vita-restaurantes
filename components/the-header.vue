@@ -7,15 +7,18 @@
         <img
           src="/pizza-icon.png"
           alt="pizza-slice"
-          class="absolute h-20 w-20 -left-6"
+          class="absolute h-20 w-20 -left-8"
         />
-        <Subtitle title="vita restaurantes" class="translate-x-16" />
+        <Subtitle title="vita restaurantes" class="translate-x-12" />
       </NuxtLink>
-      <ul class="flex space-x-4 items-center">
+      <ul class="flex space-x-4 text-sm items-center">
         <li><NuxtLink to="/">home</NuxtLink></li>
         <li><NuxtLink to="/about">sobre</NuxtLink></li>
         <li><NuxtLink to="/menu">menu</NuxtLink></li>
         <li><NuxtLink to="/book-table">fazer-reserva</NuxtLink></li>
+        <li>
+          <NuxtLink to="/testimonials">depoimentos</NuxtLink>
+        </li>
       </ul>
       <div class="flex space-x-4 items-center">
         <ul class="flex space-x-4">
@@ -29,7 +32,7 @@
             <NuxtLink to="/"><FontAwesome :icon="faSearch" /></NuxtLink>
           </li>
         </ul>
-        <BtnInline link>fazer pedido</BtnInline>
+        <BtnInline link class="text-sm">fazer pedido</BtnInline>
       </div>
     </nav>
   </header>
