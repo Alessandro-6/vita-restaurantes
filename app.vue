@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-blend-soft-light bg-gradient-to-r from-blue-950 to-emerald-900"
+    class="overflow-x-hidden bg-blend-soft-light bg-gradient-to-r from-blue-950 to-emerald-900"
   >
     <TheHeader />
     <NuxtPage class="min-h-screen" />
@@ -26,7 +26,7 @@ useHead({
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.45s;
+  transition: all 0.2s;
 }
 
 .page-enter-from,
@@ -36,10 +36,10 @@ useHead({
 }
 
 .page-enter-from {
-  transform: translateX(-6rem);
+  transform: translateX(-2rem) scale(98%);
 }
 
 .page-leave-to {
-  transform: translateX(6rem);
+  transform: translateX(2rem) scale(98%);
 }
 </style>

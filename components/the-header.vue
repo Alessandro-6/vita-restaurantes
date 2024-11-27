@@ -1,6 +1,6 @@
 <template>
   <header
-    class="grid grid-cols-12 items-center w-full from-[#222831] from-70% to-emerald-900 bg-gradient-to-r py-6 uppercase text-white font-medium max-h-36"
+    class="grid grid-cols-12 items-center w-full from-[#222831] from-70% to-emerald-900 relative z-50 bg-gradient-to-r py-6 uppercase text-white font-medium max-h-36"
   >
     <nav class="flex justify-between col-start-2 items-center col-end-12">
       <NuxtLink to="/" class="flex items-center relative">
@@ -29,7 +29,7 @@
             <NuxtLink to="/"><FontAwesome :icon="faSearch" /></NuxtLink>
           </li>
         </ul>
-        <BtnInline to="/" text-white link>fazer pedido</BtnInline>
+        <BtnInline link>fazer pedido</BtnInline>
       </div>
     </nav>
   </header>

@@ -32,7 +32,7 @@
     <p class="row-start-2 col-start-2 col-span-4">
       &copy; 2024-2025 VitaSoft. Todos os direitos reservados
     </p>
-    <ul class="row-start-2 flex space-x-6 col-start-10 fa-lg">
+    <ul class="row-start-2 flex space-x-4 col-start-10 fa-lg">
       <li>
         <NuxtLink to="/">
           <font-awesome :icon="faFacebookSquare" class="text-blue-700" />

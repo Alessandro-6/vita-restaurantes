@@ -21,13 +21,13 @@
       class="card__back h-full w-full rounded-md shadow-xl overflow-hidden p-6 shadow-emerald-950 flex flex-col gap-32 items-center justify-center bg-gradient-to-tr to-emerald-800 from-blue-950"
     >
       <h3
-        class="font-thin text-6xl bg-gradient-to-r from-blue-600 to-red-500 bg-clip-text text-transparent"
+        class="font-thin text-6xl bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
       >
         {{ price }}Kz
       </h3>
       <btn-inline to="/" link type="button">
         <span
-          class="inline-block bg-gradient-to-r to-blue-600 from-red-500 bg-clip-text text-transparent"
+          class="inline-block bg-gradient-to-r to-red-600 from-orange-700 bg-clip-text text-transparent"
         >
           Encomendar
         </span>
