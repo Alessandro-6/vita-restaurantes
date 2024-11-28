@@ -73,7 +73,7 @@ const { path } = defineProps({
     default: "",
   },
   price: {
-    type: String,
+    type: Number,
     default: 5000,
   },
 });

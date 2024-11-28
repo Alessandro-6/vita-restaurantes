@@ -1,9 +1,9 @@
 <template>
   <section
-    class="grid grid-cols-12 py-24 bg-gradient-to-r from-cyan-950 to-emerald-900"
+    class="grid grid-cols-12 py-24 bg-gradient-to-r from-cyan-950 to-green-900"
   >
     <div class="col-start-2 gap-10 col-span-10 flex flex-col items-center">
-      <Subtitle title="Nosso Menu" size="xl" class="text-center" />
+      <Subtitle title="Nosso Menu" size="xl" />
       <MenuFilter
         :elements="['todos', 'hamburguer', 'pizza', 'batatas-fritas']"
       />

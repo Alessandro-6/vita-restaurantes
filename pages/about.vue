@@ -1,6 +1,6 @@
 <template>
   <section
-    class="grid grid-cols-12 gap-10 py-24 bg-gradient-to-r from-sky-950 to-green-900"
+    class="grid grid-cols-12 gap-10 py-24 bg-gradient-to-r from-cyan-950 to-green-900"
   >
     <div class="col-start-2 col-span-5">
       <img src="/assets/about-pizza-img-1.png" alt="hamburguer" />
