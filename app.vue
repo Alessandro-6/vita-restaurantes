@@ -3,7 +3,7 @@
     class="overflow-x-hidden bg-blend-soft-light bg-gradient-to-r from-cyan-950 to-emerald-900"
   >
     <TheHeader />
-    <NuxtPage class="min-h-screen" />
+    <NuxtPage />
     <TheFooter />
   </div>
 </template>
