@@ -9,7 +9,7 @@
       class="col-span-5 flex gap-10 flex-col items-start text-white self-center"
     >
       <Subtitle
-        title="Somos VitaSoft - Restaurantes"
+        title="Somos Vitasoft - Restaurantes"
         size="xl"
         class="font-extralight"
       />

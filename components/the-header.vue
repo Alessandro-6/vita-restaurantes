@@ -11,28 +11,58 @@
         />
         <Subtitle title="vita restaurantes" class="translate-x-12" />
       </NuxtLink>
-      <ul class="flex space-x-4 text-sm items-center">
-        <li><NuxtLink to="/">home</NuxtLink></li>
-        <li><NuxtLink to="/about">sobre</NuxtLink></li>
-        <li><NuxtLink to="/menu">menu</NuxtLink></li>
-        <li><NuxtLink to="/book-table">fazer-reserva</NuxtLink></li>
-        <li>
-          <NuxtLink to="/testimonials">depoimentos</NuxtLink>
-        </li>
+      <ul class="flex space-x-4 items-center">
+        <NavLink class="hover:text-yellow-500 duration-300 transition-all">
+          <NuxtLink
+            to="/"
+            active-class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent"
+            >home</NuxtLink
+          >
+        </NavLink>
+        <NavLink class="hover:text-yellow-500 duration-300 transition-all">
+          <NuxtLink
+            to="/about"
+            active-class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent"
+            >sobre</NuxtLink
+          >
+        </NavLink>
+        <NavLink class="hover:text-yellow-500 duration-300 transition-all">
+          <NuxtLink
+            to="/menu"
+            active-class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent"
+            >menu</NuxtLink
+          >
+        </NavLink>
+        <NavLink class="hover:text-yellow-500 duration-300 transition-all">
+          <NuxtLink
+            to="/book-table"
+            active-class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent"
+            >fazer-reserva</NuxtLink
+          >
+        </NavLink>
+        <NavLink class="hover:text-yellow-500 duration-300 transition-all">
+          <NuxtLink
+            to="/testimonials"
+            active-class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent"
+            >depoimentos</NuxtLink
+          >
+        </NavLink>
       </ul>
       <div class="flex space-x-4 items-center">
         <ul class="flex space-x-4">
-          <li>
-            <NuxtLink to="/"> <FontAwesome :icon="faUser" /></NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/"><FontAwesome :icon="faShoppingCart" /></NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/"><FontAwesome :icon="faSearch" /></NuxtLink>
-          </li>
+          <NavLink>
+            <NuxtLink to="#"> <FontAwesome :icon="faUser" /></NuxtLink>
+          </NavLink>
+          <NavLink>
+            <NuxtLink to="#"><FontAwesome :icon="faShoppingCart" /></NuxtLink>
+          </NavLink>
+          <NavLink>
+            <NuxtLink to="#"><FontAwesome :icon="faSearch" /></NuxtLink>
+          </NavLink>
         </ul>
-        <BtnInline link class="text-sm">fazer pedido</BtnInline>
+        <BtnInline to="/order-online" link class="text-sm">
+          fazer pedido
+        </BtnInline>
       </div>
     </nav>
   </header>
