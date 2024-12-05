@@ -25,7 +25,7 @@
       >
         {{ price }}Kz
       </h3>
-      <btn-inline to="/" link type="button">
+      <btn-inline :to="to" link type="button">
         <span
           class="inline-block bg-gradient-to-r to-red-600 from-orange-700 bg-clip-text text-transparent"
         >
@@ -75,6 +75,10 @@ const { path } = defineProps({
   price: {
     type: Number,
     default: 5000,
+  },
+  to: {
+    type: String,
+    default: "/",
   },
 });
 </script>

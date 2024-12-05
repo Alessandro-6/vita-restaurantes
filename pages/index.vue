@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-gradient-to-r from-cyan-950 to-emerald-900 grid grid-cols-12 pb-24"
+    class="bg-gradient-to-r from-cyan-950 to-emerald-900 grid row-gap grid-cols-12 pb-24"
   >
     <div
       class="col-span-10 col-start-2 min-h-screen items-center grid grid-cols-12 gap-10 py-24"
@@ -44,7 +44,69 @@
         class="w-1/2"
       />
     </div>
+
+    <div
+      class="col-start-2 py-24 gap-10 col-span-10 row-start-3 flex flex-col items-center"
+    >
+      <Subtitle title="menu" size="xl" />
+      <div class="flex w-full flex-wrap justify-center gap-10">
+        <Card
+          v-for="dish in dishes"
+          :path="dish.image"
+          :key="dish.name"
+          :title="dish.name"
+          :price="dish.price"
+          to="/order-online"
+        >
+          {{ dish.ingredients }}</Card
+        >
+      </div>
+      <BtnInline to="/menu" link>explorar o menu</BtnInline>
+    </div>
   </section>
 </template>
 
 <style lang="scss" scoped></style>
+
+<script setup>
+const dishes = reactive([
+  {
+    name: "hamburguer big",
+    ingredients:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    image: "f2.png",
+    price: 4500,
+  },
+  {
+    name: "pizza de ortelã",
+    ingredients:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    image: "f3.png",
+  },
+  {
+    name: "macarrão com estrogonofe",
+    ingredients:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    image: "f4.png",
+  },
+  {
+    name: "batatas fritas",
+    ingredients:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    image: "f5.png",
+  },
+  {
+    name: "hamburguer vegano",
+    ingredients:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    image: "f7.png",
+    price: 2700,
+  },
+  {
+    name: "lasanha",
+    ingredients:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    image: "f9.png",
+  },
+]);
+</script>
