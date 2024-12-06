@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="pt-24 pb-16 bg-[#222831] from-sky-950 to-[#222831] bg-gradient-to-r text-white gap-6 grid grid-cols-12 to-25% w-full"
+    class="pt-24 pb-16 bg-[#222831] font-medium from-sky-950 to-[#222831] bg-gradient-to-r text-white gap-6 grid grid-cols-12 to-25% w-full"
   >
     <div class="capitalize col-start-2 col-end-12 flex justify-between">
       <div class="relative">
@@ -24,13 +24,13 @@
         </p>
       </div>
       <div>
-        <Subtitle title="aberto:" class="mb-2" />
+        <Subtitle title="aberto" class="mb-2" />
         <p>todos os dias</p>
         <p>10:00H - 22:00H</p>
       </div>
     </div>
     <p class="row-start-2 col-start-2 col-span-4">
-      &copy; 2024-2025 VitaSoft. Todos os direitos reservados
+      &copy; 2024-2025 Vitasoft. Todos os direitos reservados
     </p>
     <ul class="row-start-2 flex space-x-4 col-start-10 fa-lg">
       <li>

@@ -18,7 +18,7 @@
           {{ dish.ingredients }}</Card
         >
       </div>
-      <BtnInline to="/" link text-white>veja mais</BtnInline>
+      <BtnInline to="/" link>veja mais</BtnInline>
     </div>
   </section>
 </template>
