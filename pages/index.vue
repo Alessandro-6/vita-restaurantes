@@ -64,7 +64,7 @@
       <BtnInline to="/menu" link>explorar o menu</BtnInline>
     </div>
     <div
-      class="grid grid-cols-12 col-start-2 col-end-12 flex-wrap justify-center min-h-screen"
+      class="grid grid-cols-12 col-start-2 col-span-10 flex-wrap justify-center min-h-screen"
     >
       <Subtitle
         title="Depoimentos dos clientes"
@@ -75,17 +75,23 @@
         class="col-start-1 col-span-5 row-start-2 row-span-2"
         :right="true"
         :order="1"
+        img="f7.png"
+        name="José Luís"
+        testimonial="Encomendar pelo Vitasoft foi super rápido, e a comida chegou impecável. Adorei a experiência!"
       />
       <Testimonial
-        class="col-start-7 col-span-5 row-start-3 row-span-2"
+        class="col-start-8 col-span-5 row-start-3 row-span-2"
         :order="2"
+        name="Eliúde Martins"
+        img="f8.png"
+        testimonial="Fiz uma reserva para um jantar romântico e foi tudo perfeito. O site é muito prático e confiável!"
       />
     </div>
     <div class="col-start-2 flex justify-center col-end-12 pb-24">
       <Newsletter class="min-w-3/4">
         <template #form>
           <header class="text-justify">
-            <Subtitle title="queres 25% de desconto?" size="lg" class="mb-2" />
+            <Subtitle title="queres 25% de desconto?" size="xl" class="mb-6" />
             <p class="text-[.96rem] font-semibold">
               Gaste 25% a menos na sua primeira reserva se te subscreveres ainda
               hoje!

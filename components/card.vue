@@ -10,9 +10,9 @@
           :alt="title"
         />
       </div>
-      <div class="bg-[#222831] text-slate-50 p-6 h-3/5">
-        <h2 class="capitalize font-medium text-xl mb-4">{{ title }}</h2>
-        <p>
+      <div class="bg-[#222831] font-medium text-slate-50 p-6 h-3/5">
+        <h2 class="capitalize text-xl mb-4">{{ title }}</h2>
+        <p class="text-justify">
           <slot />
         </p>
       </div>

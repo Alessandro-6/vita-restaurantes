@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent class="flex gap-6 flex-col">
-    <form-group>
+    <form-group class="space-x-12">
       <label for="name" class="font-semibold capitalize">nome:</label>
       <BookInput
         class="placeholder:font-semibold placeholder:text-slate-700"
@@ -10,7 +10,7 @@
         placeholder="Primeiro Último"
       />
     </form-group>
-    <form-group>
+    <form-group class="space-x-12">
       <label for="phone" class="font-semibold capitalize">telefone:</label>
       <BookInput
         class="placeholder:font-semibold placeholder:text-slate-700"
@@ -20,7 +20,7 @@
         placeholder="+244 900 000 000"
       />
     </form-group>
-    <form-group>
+    <form-group class="space-x-12">
       <label for="email" class="font-semibold capitalize">email:</label>
       <BookInput
         class="placeholder:font-semibold placeholder:text-slate-700"
@@ -30,7 +30,7 @@
         placeholder="exemplo@exemplo.com"
       />
     </form-group>
-    <form-group>
+    <form-group class="space-x-12">
       <label for="people" class="font-semibold capitalize">
         quantas pessoas?
       </label>
@@ -42,7 +42,7 @@
         placeholder="42"
       />
     </form-group>
-    <form-group>
+    <form-group class="space-x-12">
       <label for="date" class="font-semibold capitalize">reserva:</label>
       <BookInput
         class="placeholder:font-semibold text-slate-700 font-semibold placeholder:text-slate-700"

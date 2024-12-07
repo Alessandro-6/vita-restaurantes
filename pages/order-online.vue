@@ -1,8 +1,8 @@
 <template>
   <section class="grid grid-cols-12 py-24">
-    <Newsletter class="col-start-2 col-end-12">
+    <Newsletter class="col-start-2 h-[31rem] flex items-center col-end-12">
       <template #form>
-        <Subtitle title="FAÇA UM PEDIDO" size="lg" class="mb-4" />
+        <Subtitle title="FAÇA UM PEDIDO" size="lg" class="mb-2" />
         <form-group class="min-w-[24.6rem]">
           <label for="name" class="font-semibold capitalize">nome:</label>
           <BookInput

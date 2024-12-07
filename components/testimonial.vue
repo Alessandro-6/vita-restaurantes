@@ -7,6 +7,19 @@ defineProps({
     type: Number,
     default: 1,
   },
+  name: {
+    type: String,
+    default: "Alessandro Almeida",
+  },
+  img: {
+    type: String,
+    default: "f1.png",
+  },
+  testimonial: {
+    type: String,
+    default:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure, explicabo distinctio soluta numquam, ullam id minus rem esse obcaecati consequuntur.",
+  },
 });
 </script>
 
@@ -27,7 +40,7 @@ defineProps({
       }"
     >
       <img
-        src="/public/assets/f1.png"
+        :src="`assets/${img}`"
         alt="pizza"
         class="bg-cover transition-all duration-300 object-contain w-32 h-32"
       />
@@ -37,14 +50,12 @@ defineProps({
       </span>
     </div>
     <div
-      class="w-2/3 h-full py-6 px-10 text-justify relative z-10"
+      class="w-2/3 h-full py-6 px-8 text-justify relative z-10"
       :class="{ '-skew-x-6': !right, 'skew-x-6': right }"
     >
-      <Subtitle title="Alessandro Almeida" class="mb-3" />
-      <p class="text-slate-50 text-[0.9rem]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure,
-        explicabo distinctio soluta numquam, ullam id minus rem esse obcaecati
-        consequuntur.
+      <Subtitle :title="name" class="mb-3" />
+      <p class="text-slate-50 text-[0.9rem] font-semibold">
+        {{ testimonial }}
       </p>
     </div>
   </div>
