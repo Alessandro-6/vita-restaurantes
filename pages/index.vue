@@ -6,22 +6,15 @@
       class="col-span-10 col-start-2 min-h-screen items-center row-start-1 grid grid-cols-12 gap-10 py-24"
     >
       <div class="col-start-7 col-span-5">
-        <img
-          src="/assets/o1.jpg"
-          alt="burguer"
-          class="border-8 border-transparent bg-gradient-to-tr from-yellow-500 to-orange-500 bg-clip-border hover:scale-105 duration-300 hover:rotate-6 transition-all"
-        />
+        <CtaImg right />
       </div>
       <div class="col-start-2 flex flex-col gap-10 col-span-5 row-start-1">
         <Subtitle size="xl" title="vita restaurantes" />
         <p class="text-slate-50 text-lg text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-          in itaque? Dolore pariatur dignissimos cumque recusandae consequuntur
-          neque unde et similique itaque est, sed, aliquam hic cum voluptatem
-          totam expedita! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Esse temporibus fuga dolore iusto voluptatem rem, nostrum
-          laboriosam explicabo et doloremque molestiae ut eveniet labore ipsa,
-          placeat incidunt.
+          No Vita Restaurantes, você faz encomendas de pratos deliciosos ou
+          reserva mesas de forma rápida e prática. Tudo em um só lugar, com
+          poucos cliques. Esqueça complicações: navegue, escolha e aproveite o
+          melhor da gastronomia. Vita Restaurantes, feito para você!
         </p>
         <BtnInline to="/book-table" link class="self-start">
           Fazer reserva
@@ -75,7 +68,7 @@
         class="col-start-1 col-span-5 row-start-2 row-span-2"
         :right="true"
         :order="1"
-        img="f7.png"
+        img="user-10.jpg"
         name="José Luís"
         testimonial="Encomendar pelo Vitasoft foi super rápido, e a comida chegou impecável. Adorei a experiência!"
       />
@@ -83,7 +76,7 @@
         class="col-start-8 col-span-5 row-start-3 row-span-2"
         :order="2"
         name="Eliúde Martins"
-        img="f8.png"
+        img="user-11.jpg"
         testimonial="Fiz uma reserva para um jantar romântico e foi tudo perfeito. O site é muito prático e confiável!"
       />
     </div>
@@ -141,6 +134,8 @@
 <style lang="scss" scoped></style>
 
 <script setup>
+import CtaImg from "~/components/cta-img.vue";
+
 const dishes = reactive([
   {
     name: "hamburguer big",

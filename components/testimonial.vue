@@ -33,7 +33,7 @@ defineProps({
     }"
   >
     <div
-      class="bg-slate-50 relative overflow-hidden flex justify-center items-center w-40 h-36 rounded-full"
+      class="overflow-hidden border-4 border-slate-200 flex justify-center items-start w-36 h-36 rounded-full"
       :class="{
         '-skew-x-6': !right,
         'skew-x-6': right,
@@ -42,7 +42,7 @@ defineProps({
       <img
         :src="`assets/${img}`"
         alt="pizza"
-        class="bg-cover transition-all duration-300 object-contain w-32 h-32"
+        class="transition-all duration-300 object-cover w-64 h-64"
       />
       <span
         class="absolute -bottom-8 text-emerald-800 opacity-50 text-lg inline-block transition-all duration-[.6s] scale-90"
@@ -54,7 +54,7 @@ defineProps({
       :class="{ '-skew-x-6': !right, 'skew-x-6': right }"
     >
       <Subtitle :title="name" class="mb-3" />
-      <p class="text-slate-50 text-[0.9rem] font-semibold">
+      <p class="text-slate-50 text-md font-semibold">
         {{ testimonial }}
       </p>
     </div>

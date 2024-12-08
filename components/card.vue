@@ -78,7 +78,7 @@ const { path } = defineProps({
   },
   to: {
     type: String,
-    default: "/",
+    default: "/order-online",
   },
 });
 </script>

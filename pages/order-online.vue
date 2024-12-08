@@ -3,7 +3,7 @@
     <Newsletter class="col-start-2 h-[31rem] flex items-center col-end-12">
       <template #form>
         <Subtitle title="FAÇA UM PEDIDO" size="lg" class="mb-2" />
-        <form-group class="min-w-[24.6rem]">
+        <div class="flex items-center gap-10 justify-between w-full">
           <label for="name" class="font-semibold capitalize">nome:</label>
           <BookInput
             class="placeholder:text-slate-700 text-slate-950"
@@ -12,8 +12,8 @@
             id="name"
             placeholder="Primeiro Último"
           />
-        </form-group>
-        <form-group class="min-w-[24.6rem]">
+        </div>
+        <div class="flex items-center gap-10 justify-between w-full">
           <label for="phone" class="font-semibold capitalize">telefone:</label>
           <BookInput
             class="placeholder:text-slate-700 text-slate-950"
@@ -22,8 +22,8 @@
             id="phone"
             placeholder="+244 900 000 000"
           />
-        </form-group>
-        <form-group class="min-w-[24.6rem]">
+        </div>
+        <div class="flex items-center gap-10 justify-between w-full">
           <label for="email" class="font-semibold capitalize">email:</label>
           <BookInput
             class="placeholder:text-slate-700 text-slate-950"
@@ -32,8 +32,8 @@
             id="email"
             placeholder="exemplo@exemplo.com"
           />
-        </form-group>
-        <form-group class="min-w-[24.6rem]">
+        </div>
+        <div class="flex items-center justify-between w-full">
           <label for="people" class="font-semibold capitalize"> prato: </label>
           <BookInput
             class="placeholder:text-slate-700 text-slate-950"
@@ -42,9 +42,9 @@
             id="people"
             placeholder="Hamburguer vegano"
           />
-        </form-group>
+        </div>
         <BtnInline type="submit" class="mt-4 w-full self-start"
-          >reservar</BtnInline
+          >fazer pedido</BtnInline
         >
       </template>
       <template #img>

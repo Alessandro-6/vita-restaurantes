@@ -12,12 +12,13 @@
           :right="true"
           :order="1"
           testimonial="Adorei o Vitasoft! Fiz minha reserva com facilidade e tudo saiu perfeito."
+          img="user-5.jpg"
         />
         <Testimonial
           class="col-start-8 col-span-5 row-start-2 row-span-2"
           :order="2"
           name="Ivandro Afonso"
-          img="f3.png"
+          img="user-6.jpg"
           testimonial="Comida excelente e entrega rápida. O site é muito prático!"
         />
         <Testimonial
@@ -25,14 +26,14 @@
           :right="true"
           :order="3"
           name="Mateus Cabingano"
-          img="f8.png"
+          img="user-7.jpg"
           testimonial="Reservei uma mesa em poucos cliques. Simples e eficiente!"
         />
         <Testimonial
           class="col-start-8 col-span-5 row-start-5 row-span-2"
           :order="4"
           name="Edson Francisco"
-          img="f7.png"
+          img="user-4.jpg"
           testimonial="Organizar um jantar especial nunca foi tão fácil. Recomendo o Vitasoft!"
         />
       </div>
