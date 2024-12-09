@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-[28rem] card w-72">
+  <div class="min-h-[29rem] card w-72">
     <div
       class="card__front h-full w-full shadow-xl rounded-md overflow-hidden shadow-emerald-950"
     >
@@ -10,11 +10,13 @@
           :alt="title"
         />
       </div>
-      <div class="bg-[#222831] font-medium text-slate-50 p-6 h-3/5">
-        <h2 class="capitalize text-xl mb-4">{{ title }}</h2>
-        <p class="text-justify">
-          <slot />
-        </p>
+      <div class="bg-[#222831] font-medium px-6 py-4 text-slate-50 h-3/5">
+        <h2 class="capitalize text-xl mb-3">{{ title }}</h2>
+        <ul class="text-justify">
+          <li v-for="ingredient in ingredients" :key="ingredient">
+            - {{ ingredient }}
+          </li>
+        </ul>
       </div>
     </div>
     <div
@@ -79,6 +81,10 @@ const { path } = defineProps({
   to: {
     type: String,
     default: "/order-online",
+  },
+  ingredients: {
+    type: Array,
+    default: ["Mussarela"],
   },
 });
 </script>

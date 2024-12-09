@@ -50,6 +50,7 @@
           :title="dish.name"
           :price="dish.price"
           to="/order-online"
+          :ingredients="dish.ingredients"
         >
           {{ dish.ingredients }}</Card
         >
@@ -134,46 +135,78 @@
 <style lang="scss" scoped></style>
 
 <script setup>
-import CtaImg from "~/components/cta-img.vue";
-
 const dishes = reactive([
   {
+    name: "pizza de queijo",
+    ingredients: [
+      "Molho de tomate",
+      "Mussarela",
+      "Camarões",
+      "siri",
+      "Lulas (em anéis)",
+      "Cebola (em fatias finas)",
+    ],
+    image: "f1.png",
+  },
+  {
     name: "hamburguer big",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    ingredients: [
+      "Pão com gergelim",
+      "Queijo cheddar",
+      "Beef patty",
+      " Cebola roxa",
+      "Tomate",
+      "Alface",
+    ],
     image: "f2.png",
     price: 4500,
   },
   {
     name: "pizza de ortelã",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    ingredients: [
+      "Mussarela",
+      "queijo parmesão",
+      "tomate",
+      "cebola",
+      "manjericão",
+      "hortelã",
+    ],
     image: "f3.png",
   },
+
   {
-    name: "macarrão com estrogonofe",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
-    image: "f4.png",
+    name: "pizza mista",
+    ingredients: ["Queijo parmesão", "tomate", "cebola", "orégano"],
+    image: "f6.png",
   },
   {
-    name: "batatas fritas",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
-    image: "f5.png",
-  },
-  {
-    name: "hamburguer vegano",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    ingredients: [
+      "Pão com gergelim",
+      "Queijo cheddar",
+      "Tomate",
+      "Cebola",
+      "Filé",
+      "ovo",
+      "coentro",
+    ],
+    name: "hamburguer de peixe",
     image: "f7.png",
     price: 2700,
   },
   {
-    name: "lasanha",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
-    image: "f9.png",
+    name: "hamburguer vegano",
+    ingredients: [
+      "Pão com gergelim",
+      "Queijo cheddar",
+      "Tomate",
+      "Cebola",
+      "Filé",
+      "ovo",
+      "coentro",
+      "alface",
+    ],
+    image: "f8.png",
+    price: 3500,
   },
 ]);
 </script>
