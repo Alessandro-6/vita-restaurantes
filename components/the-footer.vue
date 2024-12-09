@@ -18,10 +18,7 @@
       </div>
       <div class="max-w-60">
         <Subtitle title="vita restaurantes" class="mb-2" />
-        <p>
-          Necessary, making this the first true generator on the Internet. It
-          uses a dictionary of over 200 Latin words, combined with
-        </p>
+        <p>Entrega rápida e reservas fáceis para uma experiência saborosa!</p>
       </div>
       <div>
         <Subtitle title="aberto" class="mb-2" />
