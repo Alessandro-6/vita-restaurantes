@@ -14,6 +14,7 @@
           :key="dish.name"
           :title="dish.name"
           :price="dish.price"
+          :ingredients="dish.ingredients"
         >
           {{ dish.ingredients }}</Card
         >
@@ -27,58 +28,95 @@
 const dishes = reactive([
   {
     name: "pizza de queijo",
-    ingredients:
-      "Molho de tomate, Mussarela, Camarões, siri, Lulas (em anéis), Cebola (em fatias finas) ",
+    ingredients: [
+      "molho de tomate",
+      "mussarela",
+      "camarões",
+      "siri",
+      "lulas (em anéis)",
+      "cebola (em fatias finas)",
+    ],
     image: "f1.png",
   },
   {
     name: "hamburguer big",
-    ingredients:
-      "Pão com gergelim, Queijo cheddar, Beef patty, Cebola roxa, Tomate, Alface",
+    ingredients: [
+      "pão com gergelim",
+      "queijo cheddar",
+      "beef patty",
+      "cebola roxa",
+      "tomate",
+      "alface",
+    ],
     image: "f2.png",
     price: 4500,
   },
   {
     name: "pizza de ortelã",
-    ingredients:
-      " Mussarela, queijo parmesão, tomate, cebola, manjericão, hortelã",
+    ingredients: [
+      "mussarela",
+      "queijo parmesão",
+      "tomate",
+      "cebola",
+      "manjericão",
+      "hortelã",
+    ],
     image: "f3.png",
   },
-  {
-    name: "macarrão com estrogonofe",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
-    image: "f4.png",
-  },
-  {
-    name: "batatas fritas",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
-    image: "f5.png",
-  },
+
   {
     name: "pizza mista",
-    ingredients: "Queijo parmesão, tomate, cebola, orégano,",
+    ingredients: ["queijo parmesão", "tomate", "cebola", "orégano"],
     image: "f6.png",
   },
   {
-    ingredients:
-      " Pão com gergelim, Queijo cheddar, Tomate, Cebola, Filé, ovo, coentro",
+    ingredients: [
+      "pão com gergelim",
+      "queijo cheddar",
+      "tomate",
+      "cebola",
+      "filé",
+      "ovo",
+      "coentro",
+    ],
     name: "hamburguer de peixe",
     image: "f7.png",
     price: 2700,
   },
   {
-    name: "hamburguer vegano (sementes sésamo)",
-    ingredients:
-      "Pão com gergelim, Queijo cheddar, Tomate, Cebola, Filé, ovo, coentro, Alho picado,  tomate, alface",
+    name: "hamburguer vegano",
+    ingredients: [
+      "pão com gergelim",
+      "queijo cheddar",
+      "tomate",
+      "cebola",
+      "filé",
+      "ovo",
+      "coentro",
+      "alface",
+    ],
     image: "f8.png",
     price: 3500,
   },
   {
+    name: "macarrão com estrogonofe",
+    ingredients: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate.",
+    ],
+    image: "f4.png",
+  },
+  {
+    name: "batatas fritas",
+    ingredients: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate.",
+    ],
+    image: "f5.png",
+  },
+  {
     name: "lasanha",
-    ingredients:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate. ",
+    ingredients: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate.",
+    ],
     image: "f9.png",
   },
 ]);

@@ -12,8 +12,8 @@
       </div>
       <div class="bg-[#222831] font-medium px-6 py-4 text-slate-50 h-3/5">
         <h2 class="capitalize text-xl mb-3">{{ title }}</h2>
-        <ul class="text-justify">
-          <li v-for="ingredient in ingredients" :key="ingredient">
+        <ul class="text-justify capitalize">
+          <li v-for="ingredient in sortedIngredients" :key="ingredient">
             - {{ ingredient }}
           </li>
         </ul>
@@ -65,7 +65,7 @@
 </style>
 
 <script setup>
-const { path } = defineProps({
+const { path, ingredients } = defineProps({
   path: {
     type: String,
     default: "",
@@ -87,4 +87,5 @@ const { path } = defineProps({
     default: ["Mussarela"],
   },
 });
+const sortedIngredients = computed(() => ingredients?.slice().sort());
 </script>
