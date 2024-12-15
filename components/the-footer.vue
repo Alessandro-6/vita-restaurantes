@@ -13,7 +13,7 @@
         <ul>
           <li>Avenida 21 de Janeiro, Luanda</li>
           <li>telefone +244 941 696 934</li>
-          <li>propriedade0@gmail.com</li>
+          <li class="lowercase">propriedade0@gmail.com</li>
         </ul>
       </div>
       <div class="max-w-60">

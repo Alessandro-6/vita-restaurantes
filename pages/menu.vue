@@ -66,7 +66,16 @@ const dishes = reactive([
 
   {
     name: "pizza mista",
-    ingredients: ["queijo parmesão", "tomate", "cebola", "orégano"],
+    ingredients: [
+      "Queijo mussarela",
+      "Manjericão",
+      "Azeitonas pretas",
+      "Cogumelos",
+      "Pepperoni",
+      "Calabresa",
+      "Frutos do mar",
+      "Queijo parmesão",
+    ],
     image: "f6.png",
   },
   {
@@ -101,21 +110,35 @@ const dishes = reactive([
   {
     name: "macarrão com estrogonofe",
     ingredients: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate.",
+      "Massa fusilli",
+      "Carne moída",
+      "Queijo parmesão ralado",
+      "Manjericão fresco",
+      "Azeite de oliva",
+      "Pimenta-do-reino",
     ],
     image: "f4.png",
   },
   {
     name: "batatas fritas",
     ingredients: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate.",
+      "Batatas",
+      "Páprica",
+      "Alho em pó",
+      "Pimenta-do-reino",
+      "Ervas secas",
     ],
     image: "f5.png",
   },
   {
     name: "lasanha",
     ingredients: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magnam neque possimus sequi aspernatur quis iste vel laudantium nesciunt, obcaecati voluptate.",
+      "Massa fusilli",
+      "Molho de tomate",
+      "Queijo mussarela",
+      "Manjericão",
+      "Carne moída",
+      "Pimenta-do-reino",
     ],
     image: "f9.png",
   },

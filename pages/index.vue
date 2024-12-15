@@ -176,7 +176,16 @@ const dishes = reactive([
 
   {
     name: "pizza mista",
-    ingredients: ["queijo parmesão", "tomate", "cebola", "orégano"],
+    ingredients: [
+      "Queijo mussarela",
+      "Manjericão",
+      "Azeitonas pretas",
+      "Cogumelos",
+      "Pepperoni",
+      "Calabresa",
+      "Frutos do mar",
+      "Queijo parmesão",
+    ],
     image: "f6.png",
   },
   {
