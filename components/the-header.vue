@@ -24,7 +24,7 @@
       <TransitionExpand>
         <ul
           class="sm:flex sm:space-x-4 items-center -translate-y-4 sm:-translate-y-0"
-          v-if="hidden"
+          v-if="!hidden"
         >
           <NavLink class="hover:text-yellow-500 duration-300 transition-all">
             <NuxtLink
